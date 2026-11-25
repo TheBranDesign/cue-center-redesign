@@ -4,16 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CUE – Community United Effort | Serving Missing Persons Nationwide</title>
-  <meta name="description" content="Community United Effort (CUE) Center for Missing Persons is a 501(c)(3) non-profit organization founded in 1994 in Wilmington, NC, providing free search, advocacy, and support services nationwide." />
+  <meta name="description" content="Community United Effort (CUE) Center for Missing Persons is a 501(c)(3) non-profit founded in 1994 in Wilmington, NC, providing free search, advocacy, and support services nationwide." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@400;700&family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- Top Utility Bar (Preserved Black Bar) -->
+  <!-- Animated ambient background orbs -->
+  <div class="ambient-layer" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Top Utility Bar -->
   <div class="utility-bar">
     <div class="container utility-inner">
       <div class="utility-left">
@@ -40,34 +47,36 @@
     </div>
   </div>
 
-  <!-- Main Header & Navigation (Preserved CUE Crimson Red) -->
+  <!-- Glass Navigation Header -->
   <header class="site-header" id="site-header">
+    <div class="header-glass-bg" aria-hidden="true"></div>
     <div class="container header-inner">
       <a href="https://ncmissingpersons.org/" class="brand-logo" aria-label="CUE – Community United Effort Home">
-        <img
-          src="https://ncmissingpersons.org/wp-content/uploads/2020/04/cue-logo-new.jpg"
-          alt="CUE - Community United Effort"
-          width="88"
-          height="88"
-        />
+        <div class="logo-glass-ring">
+          <img
+            src="https://ncmissingpersons.org/wp-content/uploads/2020/04/cue-logo-new.jpg"
+            alt="CUE - Community United Effort"
+            width="62" height="62"
+          />
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">CUE Center</span>
+          <span class="brand-tagline">Missing Persons</span>
+        </div>
       </a>
 
       <nav class="main-nav" aria-label="Primary Navigation">
         <ul class="nav-list">
           <li><a href="https://ncmissingpersons.org/" class="nav-link is-active">Home</a></li>
           <li class="has-dropdown">
-            <a href="https://ncmissingpersons.org/about/" class="nav-link">
-              About Us <span class="caret" aria-hidden="true">▾</span>
-            </a>
+            <a href="https://ncmissingpersons.org/about/" class="nav-link">About Us <span class="caret" aria-hidden="true">▾</span></a>
             <ul class="dropdown-menu">
               <li><a href="https://ncmissingpersons.org/about/">About CUE Center</a></li>
               <li><a href="https://ncmissingpersons.org/our-landmark-case-peggy-carr/">Our Landmark Case | Peggy Carr</a></li>
             </ul>
           </li>
           <li class="has-dropdown">
-            <a href="https://ncmissingpersons.org/missing-persons/" class="nav-link">
-              Missing Persons <span class="caret" aria-hidden="true">▾</span>
-            </a>
+            <a href="https://ncmissingpersons.org/missing-persons/" class="nav-link">Missing Persons <span class="caret" aria-hidden="true">▾</span></a>
             <ul class="dropdown-menu">
               <li><a href="https://ncmissingpersons.org/confidential-tip-form/">Submit A Tip</a></li>
               <li><a href="https://ncmissingpersons.org/west-coast/">West Coast</a></li>
@@ -83,9 +92,7 @@
           <li><a href="https://ncmissingpersons.org/services/" class="nav-link">Services</a></li>
           <li><a href="https://ncmissingpersons.org/programs/" class="nav-link">Programs</a></li>
           <li class="has-dropdown">
-            <a href="https://ncmissingpersons.org/newsletter/" class="nav-link">
-              News <span class="caret" aria-hidden="true">▾</span>
-            </a>
+            <a href="https://ncmissingpersons.org/newsletter/" class="nav-link">News <span class="caret" aria-hidden="true">▾</span></a>
             <ul class="dropdown-menu">
               <li><a href="https://ncmissingpersons.org/newsletter/">Newsletter</a></li>
               <li><a href="https://ncmissingpersons.org/about/susan-murphy-milano/">Susan Murphy Milano</a></li>
@@ -95,11 +102,9 @@
             </ul>
           </li>
           <li><a href="https://ncmissingpersons.org/volunteer-now/" class="nav-link">Volunteer</a></li>
-          <li><a href="https://ncmissingpersons.org/shop/" class="nav-link">CUE SHOP</a></li>
+          <li><a href="https://ncmissingpersons.org/shop/" class="nav-link">CUE Shop</a></li>
           <li class="has-dropdown">
-            <a href="https://ncmissingpersons.org/donate/" class="nav-link nav-donate">
-              Donate <span class="caret" aria-hidden="true">▾</span>
-            </a>
+            <a href="https://ncmissingpersons.org/donate/" class="nav-link nav-donate">Donate <span class="caret" aria-hidden="true">▾</span></a>
             <ul class="dropdown-menu">
               <li><a href="https://ncmissingpersons.org/donate/">Make a Donation</a></li>
               <li><a href="https://ncmissingpersons.org/giving-tuesday/">Giving Tuesday</a></li>
@@ -112,7 +117,7 @@
         <button type="button" class="icon-btn" id="search-open-btn" aria-label="Search website">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         </button>
-        <a href="https://ncmissingpersons.org/cart/" class="icon-btn cart-btn" aria-label="View shopping cart">
+        <a href="https://ncmissingpersons.org/cart/" class="icon-btn cart-btn" aria-label="View cart">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
           <span class="cart-badge">0</span>
         </a>
@@ -122,26 +127,25 @@
       </div>
     </div>
 
-    <!-- Expandable Header Search Bar -->
+    <!-- Glass Search Overlay -->
     <div class="search-overlay" id="search-overlay" hidden>
       <div class="container search-overlay-inner">
-        <form action="https://ncmissingpersons.org/" method="get" class="header-search-form" role="search">
-          <label for="header-search-input" class="sr-only">Search CUE Center for Missing Persons</label>
-          <input
-            id="header-search-input"
-            type="search"
-            name="s"
-            placeholder="Search missing persons, programs, news, or resources..."
-            autocomplete="off"
-          />
-          <button type="submit" class="btn btn-gold">Search</button>
-          <button type="button" class="search-close-btn" id="search-close-btn" aria-label="Close search">&times;</button>
+        <form action="https://ncmissingpersons.org/" method="get" class="glass-search-form" role="search">
+          <div class="glass-search-wrap">
+            <svg class="search-icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <label for="header-search-input" class="sr-only">Search CUE Center for Missing Persons</label>
+            <input id="header-search-input" type="search" name="s"
+              placeholder="Search missing persons, programs, news, or resources..."
+              autocomplete="off" />
+            <button type="submit" class="btn btn-gold">Search</button>
+            <button type="button" class="search-close-btn" id="search-close-btn" aria-label="Close search">&times;</button>
+          </div>
         </form>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Navigation Drawer -->
+  <!-- Mobile Drawer -->
   <div class="mobile-drawer" id="mobile-drawer" hidden>
     <div class="mobile-drawer-header">
       <span>CUE Navigation</span>
@@ -158,121 +162,148 @@
       <li><a href="https://ncmissingpersons.org/programs/">Programs</a></li>
       <li><a href="https://ncmissingpersons.org/newsletter/">News</a></li>
       <li><a href="https://ncmissingpersons.org/volunteer-now/">Volunteer</a></li>
-      <li><a href="https://ncmissingpersons.org/shop/">CUE SHOP</a></li>
-      <li><a href="https://ncmissingpersons.org/donate/">Donate</a></li>
+      <li><a href="https://ncmissingpersons.org/shop/">CUE Shop</a></li>
+      <li><a href="https://ncmissingpersons.org/donate/" class="mobile-donate-link">Donate</a></li>
     </ul>
   </div>
 
   <main id="main-content">
-    <!-- SECTOR 1: Hero Field-Search Carousel -->
+
+    <!-- ═══ SECTOR 1: Cinematic Hero Carousel ═══ -->
     <section class="hero-section" aria-label="Featured CUE Mission Slides">
       <div class="hero-slider" id="hero-slider">
+
         <article class="hero-slide is-active" data-slide="0">
-          <img
-            src="https://ncmissingpersons.org/wp-content/uploads/2019/03/cb4052_63450bad109d46e1b8cbb14f55d54852_mv2.png"
-            alt="CUE Center volunteers walking into wooded area during a ground search"
-            class="hero-bg"
-          />
+          <div class="hero-img-wrap">
+            <img src="https://ncmissingpersons.org/wp-content/uploads/2019/03/cb4052_63450bad109d46e1b8cbb14f55d54852_mv2.png"
+              alt="CUE Center volunteers walking into wooded area during a ground search" class="hero-bg" />
+          </div>
           <div class="hero-scrim"></div>
+          <div class="hero-gradient-overlay"></div>
           <div class="container hero-content">
-            <span class="hero-eyebrow">501(c)(3) Non-Profit · Founded 1994 · Free Services Nationwide</span>
-            <h1>COMMUNITY UNITED EFFORT</h1>
-            <p class="hero-subtitle">Serving Missing Persons Nationwide — Boots-on-the-Ground Search, Advocacy &amp; Family Support</p>
-            <div class="hero-cta-group">
-              <a href="https://ncmissingpersons.org/missing-persons/" class="btn btn-primary">Search Missing Persons</a>
-              <a href="https://ncmissingpersons.org/file-report/" class="btn btn-gold">File a Report</a>
-              <a href="https://ncmissingpersons.org/confidential-tip-form/" class="btn btn-outline-light">Submit Confidential Tip</a>
+            <div class="hero-text-block">
+              <span class="hero-eyebrow reveal-fade">501(c)(3) Non-Profit · Founded 1994 · Free Services Nationwide</span>
+              <h1 class="reveal-up">Community<br>United Effort</h1>
+              <p class="hero-subtitle reveal-up" style="--delay:.15s">Serving Missing Persons Nationwide — Boots-on-the-Ground Search, Advocacy &amp; Family Support</p>
+              <div class="hero-cta-group reveal-up" style="--delay:.28s">
+                <a href="https://ncmissingpersons.org/missing-persons/" class="btn btn-primary btn-glow">Search Missing Persons</a>
+                <a href="https://ncmissingpersons.org/file-report/" class="btn btn-gold">File a Report</a>
+                <a href="https://ncmissingpersons.org/confidential-tip-form/" class="btn btn-glass">Submit Confidential Tip</a>
+              </div>
+            </div>
+            <!-- Glass search panel -->
+            <div class="hero-glass-search reveal-fade" style="--delay:.35s">
+              <form action="https://ncmissingpersons.org/" method="get" role="search">
+                <label for="hero-search" class="hero-search-label">Find a Missing Person</label>
+                <div class="hero-search-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                  <input id="hero-search" type="search" name="s" placeholder="Search by name, city, or state..." />
+                  <button type="submit" class="btn btn-gold">Search</button>
+                </div>
+                <div class="hero-search-quick">
+                  <span>Quick:</span>
+                  <a href="https://ncmissingpersons.org/west-coast/">West Coast</a>
+                  <a href="https://ncmissingpersons.org/south/">South</a>
+                  <a href="https://ncmissingpersons.org/unidentified/">Unidentified</a>
+                </div>
+              </form>
             </div>
           </div>
         </article>
 
         <article class="hero-slide" data-slide="1">
-          <img
-            src="https://ncmissingpersons.org/wp-content/uploads/2019/03/missingpersons.png"
-            alt="Line of CUE search and recovery volunteers conducting a field search"
-            class="hero-bg"
-          />
+          <div class="hero-img-wrap">
+            <img src="https://ncmissingpersons.org/wp-content/uploads/2019/03/missingpersons.png"
+              alt="Line of CUE search and recovery volunteers conducting a field search" class="hero-bg" />
+          </div>
           <div class="hero-scrim"></div>
+          <div class="hero-gradient-overlay"></div>
           <div class="container hero-content">
-            <span class="hero-eyebrow">100% Volunteer-Driven Field Operations</span>
-            <h2>VOLUNTEER WITH CUE</h2>
-            <p class="hero-subtitle">Find out how you can join trained search teams, state outreach coordinators, and victim advocacy efforts.</p>
-            <div class="hero-cta-group">
-              <a href="https://ncmissingpersons.org/volunteer-now/" class="btn btn-gold">Volunteer Now</a>
-              <a href="https://ncmissingpersons.org/state-outreach-coordinator/" class="btn btn-outline-light">State Outreach Coordinators</a>
+            <div class="hero-text-block">
+              <span class="hero-eyebrow">100% Volunteer-Driven Field Operations</span>
+              <h2>Volunteer<br>With CUE</h2>
+              <p class="hero-subtitle">Join trained search teams, state outreach coordinators, and victim advocacy efforts across the nation.</p>
+              <div class="hero-cta-group">
+                <a href="https://ncmissingpersons.org/volunteer-now/" class="btn btn-gold btn-glow">Volunteer Now</a>
+                <a href="https://ncmissingpersons.org/state-outreach-coordinator/" class="btn btn-glass">State Outreach Coordinators</a>
+              </div>
             </div>
           </div>
         </article>
 
         <article class="hero-slide" data-slide="2">
-          <img
-            src="https://ncmissingpersons.org/wp-content/uploads/2019/02/v7.jpg"
-            alt="CUE Search and Rescue K9 Smoke with volunteer handlers"
-            class="hero-bg"
-          />
+          <div class="hero-img-wrap">
+            <img src="https://ncmissingpersons.org/wp-content/uploads/2019/02/v7.jpg"
+              alt="CUE Search and Rescue K9 Smoke with volunteer handlers" class="hero-bg" />
+          </div>
           <div class="hero-scrim"></div>
+          <div class="hero-gradient-overlay"></div>
           <div class="container hero-content">
-            <span class="hero-eyebrow">Specialized K9 &amp; HRD Training</span>
-            <h2>SEARCH &amp; RECOVERY EXCELLENCE</h2>
-            <p class="hero-subtitle">Providing professionally trained search personnel, K9 teams, and Human Remains Detection (HRD) specialty seminars.</p>
-            <div class="hero-cta-group">
-              <a href="https://ncmissingpersons.org/search-resources/" class="btn btn-primary">Search &amp; Recovery</a>
-              <a href="https://ncmissingpersons.org/donate/" class="btn btn-gold">Support Our Mission</a>
+            <div class="hero-text-block">
+              <span class="hero-eyebrow">Specialized K9 &amp; HRD Training</span>
+              <h2>Search &amp; Recovery<br>Excellence</h2>
+              <p class="hero-subtitle">Professionally trained search personnel, K9 teams, and Human Remains Detection specialty seminars.</p>
+              <div class="hero-cta-group">
+                <a href="https://ncmissingpersons.org/search-resources/" class="btn btn-primary btn-glow">Search &amp; Recovery</a>
+                <a href="https://ncmissingpersons.org/donate/" class="btn btn-gold">Support Our Mission</a>
+              </div>
             </div>
           </div>
         </article>
 
-        <button type="button" class="slider-arrow slider-prev" id="hero-prev" aria-label="Previous slide">&#10094;</button>
-        <button type="button" class="slider-arrow slider-next" id="hero-next" aria-label="Next slide">&#10095;</button>
+        <button type="button" class="slider-arrow slider-prev" id="hero-prev" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button type="button" class="slider-arrow slider-next" id="hero-next" aria-label="Next slide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
 
         <div class="slider-dots" role="tablist" aria-label="Slide navigation">
           <button type="button" class="dot is-active" data-target="0" aria-label="Slide 1"></button>
           <button type="button" class="dot" data-target="1" aria-label="Slide 2"></button>
           <button type="button" class="dot" data-target="2" aria-label="Slide 3"></button>
         </div>
+
+        <div class="hero-progress-bar" aria-hidden="true"><div class="hero-progress-fill" id="hero-progress"></div></div>
       </div>
     </section>
 
-    <!-- SECTOR 2: Signature 6-Sector Program & Resource Band (Black Band Preserved & Modernized) -->
+    <!-- ═══ SECTOR 2: 6 Program Sector Badges ═══ -->
     <section class="program-sectors-band" aria-label="CUE Core Program Sectors">
+      <div class="program-band-glass" aria-hidden="true"></div>
       <div class="container">
         <div class="program-sectors-grid">
-          <a href="https://ncmissingpersons.org/national-missing-person-conference/" class="sector-badge-card">
+          <a href="https://ncmissingpersons.org/national-missing-person-conference/" class="sector-badge-card reveal-stagger">
             <div class="sector-badge-ring">
               <img src="https://ncmissingpersons.org/wp-content/uploads/2019/04/cb4052_9324fda0a7114fdf947d60440512f1e9_mv2.png" alt="National Missing Persons Conference" />
             </div>
             <span class="sector-badge-title">National Missing Persons Conference</span>
           </a>
-
-          <a href="https://ncmissingpersons.org/wp-content/uploads/2019/05/ROADTOREMEMBERPDF.pdf" class="sector-badge-card" target="_blank" rel="noopener">
+          <a href="https://ncmissingpersons.org/wp-content/uploads/2019/05/ROADTOREMEMBERPDF.pdf" class="sector-badge-card reveal-stagger" target="_blank" rel="noopener">
             <div class="sector-badge-ring">
               <img src="https://ncmissingpersons.org/wp-content/uploads/2019/04/cb4052_4046170ab9984d2bb890f3c2a93d795d_mv2.png" alt="On the Road to Remember Tour" />
             </div>
             <span class="sector-badge-title">On the Road to Remember Tour</span>
           </a>
-
-          <a href="https://ncmissingpersons.org/state-outreach-coordinator/" class="sector-badge-card">
+          <a href="https://ncmissingpersons.org/state-outreach-coordinator/" class="sector-badge-card reveal-stagger">
             <div class="sector-badge-ring">
               <img src="https://ncmissingpersons.org/wp-content/uploads/2019/04/cb4052_c9a922f8e1c641bca715c963222d49f7_mv2.png" alt="State Outreach Coordinator" />
             </div>
             <span class="sector-badge-title">State Outreach Coordinator</span>
           </a>
-
-          <a href="https://ncmissingpersons.org/hrd-specialty-k9-seminar/" class="sector-badge-card">
+          <a href="https://ncmissingpersons.org/hrd-specialty-k9-seminar/" class="sector-badge-card reveal-stagger">
             <div class="sector-badge-ring is-light-logo">
               <img src="https://ncmissingpersons.org/wp-content/uploads/2023/09/HRD-STS-Hoodielogo-300x220.jpg" alt="HRD Specialty Training Seminar" />
             </div>
             <span class="sector-badge-title">HRD Specialty Training Seminar</span>
           </a>
-
-          <a href="https://ncmissingpersons.org/search-resources/" class="sector-badge-card">
+          <a href="https://ncmissingpersons.org/search-resources/" class="sector-badge-card reveal-stagger">
             <div class="sector-badge-ring">
               <img src="https://ncmissingpersons.org/wp-content/uploads/2019/04/cb4052_1daec7d857d3493a8238dc34fbe1ac4b_mv2-1-1.png" alt="Search &amp; Recovery" />
             </div>
             <span class="sector-badge-title">Search &amp; Recovery</span>
           </a>
-
-          <a href="https://ncmissingpersons.org/awards/" class="sector-badge-card">
+          <a href="https://ncmissingpersons.org/awards/" class="sector-badge-card reveal-stagger">
             <div class="sector-badge-ring">
               <img src="https://ncmissingpersons.org/wp-content/uploads/2019/04/cb4052_290581a176b34671804ba439ea94efc7_mv2.png" alt="CUE Awards" />
             </div>
@@ -282,149 +313,179 @@
       </div>
     </section>
 
-    <!-- SECTOR 3: Missing Persons Case Sectors & Live Search (Warm Heritage Background) -->
+    <!-- ═══ SECTOR 3: Missing Persons Case Sectors ═══ -->
     <section class="case-sectors-section" aria-labelledby="case-sectors-heading">
+      <div class="section-bg-gradient" aria-hidden="true"></div>
       <div class="container">
         <div class="section-header-row">
-          <div>
+          <div class="reveal-up">
             <span class="section-kicker">Browse &amp; Search Active Cases</span>
-            <h2 id="case-sectors-heading">MISSING PERSONS SECTORS</h2>
-            <p class="section-lead">
-              Select a regional or specialized sector below, or search the CUE database directly to help bring loved ones home.
-            </p>
+            <h2 id="case-sectors-heading">Missing Persons Sectors</h2>
+            <p class="section-lead">Select a regional or specialized sector, or search directly to help bring loved ones home.</p>
           </div>
-          <form action="https://ncmissingpersons.org/" method="get" class="inline-case-search" role="search">
+          <form action="https://ncmissingpersons.org/" method="get" class="inline-case-search reveal-fade" role="search">
             <label for="case-search-input" class="sr-only">Search missing persons by name or keyword</label>
-            <input
-              id="case-search-input"
-              type="search"
-              name="s"
-              placeholder="Search by name, city, or keyword..."
-            />
+            <div class="glass-input-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              <input id="case-search-input" type="search" name="s" placeholder="Search by name, city, or keyword..." />
+            </div>
             <button type="submit" class="btn btn-primary">Search Cases</button>
           </form>
         </div>
 
         <div class="case-sectors-grid">
-          <a href="https://ncmissingpersons.org/west-coast/" class="case-sector-card">
+          <a href="https://ncmissingpersons.org/west-coast/" class="case-sector-card glass-card reveal-stagger">
+            <div class="card-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z"/></svg>
+            </div>
             <span class="sector-tag">Regional Sector</span>
             <h3>West Coast</h3>
             <p>Active missing person profiles and search updates across the Western United States.</p>
-            <span class="sector-arrow">Explore West Coast &rarr;</span>
+            <span class="sector-arrow">Explore West Coast →</span>
           </a>
 
-          <a href="https://ncmissingpersons.org/south/" class="case-sector-card">
+          <a href="https://ncmissingpersons.org/south/" class="case-sector-card glass-card reveal-stagger">
+            <div class="card-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z"/></svg>
+            </div>
             <span class="sector-tag">Regional Sector</span>
             <h3>South</h3>
             <p>Missing children and adults across Southern states, including North Carolina.</p>
-            <span class="sector-arrow">Explore South &rarr;</span>
+            <span class="sector-arrow">Explore South →</span>
           </a>
 
-          <a href="https://ncmissingpersons.org/midwest/" class="case-sector-card">
+          <a href="https://ncmissingpersons.org/midwest/" class="case-sector-card glass-card reveal-stagger">
+            <div class="card-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z"/></svg>
+            </div>
             <span class="sector-tag">Regional Sector</span>
             <h3>Midwest</h3>
             <p>Regional case listings, family advocacy, and outreach across the Midwest.</p>
-            <span class="sector-arrow">Explore Midwest &rarr;</span>
+            <span class="sector-arrow">Explore Midwest →</span>
           </a>
 
-          <a href="https://ncmissingpersons.org/northeast/" class="case-sector-card">
+          <a href="https://ncmissingpersons.org/northeast/" class="case-sector-card glass-card reveal-stagger">
+            <div class="card-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z"/></svg>
+            </div>
             <span class="sector-tag">Regional Sector</span>
             <h3>Northeast</h3>
             <p>Active missing person cases and community alerts in the Northeastern U.S.</p>
-            <span class="sector-arrow">Explore Northeast &rarr;</span>
+            <span class="sector-arrow">Explore Northeast →</span>
           </a>
 
-          <a href="https://ncmissingpersons.org/international/" class="case-sector-card">
+          <a href="https://ncmissingpersons.org/international/" class="case-sector-card glass-card reveal-stagger">
+            <div class="card-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
             <span class="sector-tag">Global Sector</span>
             <h3>International</h3>
             <p>Cross-border missing person cases and international family support resources.</p>
-            <span class="sector-arrow">Explore International &rarr;</span>
+            <span class="sector-arrow">Explore International →</span>
           </a>
 
-          <a href="https://ncmissingpersons.org/unidentified/" class="case-sector-card">
+          <a href="https://ncmissingpersons.org/unidentified/" class="case-sector-card glass-card reveal-stagger">
+            <div class="card-icon-badge card-icon-special">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
+            </div>
             <span class="sector-tag">Special Sector</span>
             <h3>Unidentified</h3>
             <p>Help identify John &amp; Jane Does and bring long-awaited answers to waiting families.</p>
-            <span class="sector-arrow">View Unidentified &rarr;</span>
+            <span class="sector-arrow">View Unidentified →</span>
           </a>
 
-          <a href="https://ncmissingpersons.org/unsolved-homicides/" class="case-sector-card">
+          <a href="https://ncmissingpersons.org/unsolved-homicides/" class="case-sector-card glass-card reveal-stagger">
+            <div class="card-icon-badge card-icon-special">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m9 12 2 2 4-4"/><path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7z"/><path d="M22 19H2"/></svg>
+            </div>
             <span class="sector-tag">Special Sector</span>
             <h3>Unsolved Homicides</h3>
             <p>Seeking justice and new leads for unsolved homicide investigations nationwide.</p>
-            <span class="sector-arrow">View Unsolved Cases &rarr;</span>
+            <span class="sector-arrow">View Unsolved Cases →</span>
           </a>
 
-          <a href="https://ncmissingpersons.org/confidential-tip-form/" class="case-sector-card is-highlight">
+          <a href="https://ncmissingpersons.org/confidential-tip-form/" class="case-sector-card is-highlight glass-card reveal-stagger">
+            <div class="card-icon-badge card-icon-gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
             <span class="sector-tag">24/7 Confidential</span>
             <h3>Submit a Tip</h3>
-            <p>Have information on any case? Submit an anonymous tip online or call <strong>910-232-1687</strong>.</p>
-            <span class="sector-arrow">Submit Tip Now &rarr;</span>
+            <p>Have information on any case? Submit anonymously online or call <strong>910-232-1687</strong>.</p>
+            <span class="sector-arrow">Submit Tip Now →</span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- SECTOR 4: Urgent Action Strip (Report, Volunteer, Donate) -->
+    <!-- ═══ SECTOR 4: Action Strip ═══ -->
     <section class="action-strip-section" aria-label="Immediate Ways to Help">
+      <div class="action-bg-pattern" aria-hidden="true"></div>
       <div class="container action-strip-grid">
-        <div class="action-card">
-          <h3>Need to Report a Missing Person?</h3>
+
+        <div class="action-card glass-card reveal-stagger">
+          <div class="action-card-icon action-icon-red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10,9 9,9 8,9"/></svg>
+          </div>
+          <h3>Report a Missing Person</h3>
           <p>CUE Center provides all search, advocacy, and case management services completely free of charge to families.</p>
           <div class="action-card-links">
-            <a href="https://ncmissingpersons.org/file-report/" class="btn btn-primary">File a Report</a>
+            <a href="https://ncmissingpersons.org/file-report/" class="btn btn-primary btn-glow">File a Report</a>
             <a href="tel:9102321687" class="btn btn-outline-dark">Call 910-232-1687</a>
           </div>
         </div>
 
-        <div class="action-card">
+        <div class="action-card glass-card reveal-stagger">
+          <div class="action-card-icon action-icon-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
           <h3>Join Our Volunteer Force</h3>
-          <p>Founded in 1994 in Wilmington, NC, CUE operates through dedicated volunteers, K9 handlers, and state coordinators.</p>
+          <p>Founded in 1994 in Wilmington, NC. CUE operates through dedicated volunteers, K9 handlers, and state coordinators.</p>
           <div class="action-card-links">
             <a href="https://ncmissingpersons.org/volunteer-now/" class="btn btn-dark">Become a Volunteer</a>
             <a href="https://ncmissingpersons.org/services/" class="btn btn-outline-dark">Our Services</a>
           </div>
         </div>
 
-        <div class="action-card">
-          <h3>Fuel the Search — Donate Today</h3>
-          <p>Your tax-deductible 501(c)(3) contribution keeps our boots on the ground and our 24-hour helpline running.</p>
+        <div class="action-card glass-card reveal-stagger">
+          <div class="action-card-icon action-icon-gold">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>Fuel the Search — Donate</h3>
+          <p>Your tax-deductible 501(c)(3) contribution keeps our boots on the ground and 24-hour helpline running.</p>
           <div class="action-card-links">
-            <a href="https://ncmissingpersons.org/donate/" class="btn btn-gold">Donate to CUE</a>
+            <a href="https://ncmissingpersons.org/donate/" class="btn btn-gold btn-glow">Donate to CUE</a>
             <a href="https://ncmissingpersons.org/shop/" class="btn btn-outline-dark">Visit CUE Shop</a>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- SECTOR 5: A Special Thank You — Sponsors & Community Partners -->
+    <!-- ═══ SECTOR 5: Sponsors ═══ -->
     <section class="sponsors-section" aria-labelledby="sponsors-heading">
       <div class="container">
-        <div class="sponsors-header">
+        <div class="sponsors-header reveal-up">
           <span class="section-kicker">Community &amp; Corporate Supporters</span>
-          <h2 id="sponsors-heading">A SPECIAL THANK YOU</h2>
+          <h2 id="sponsors-heading">A Special Thank You</h2>
           <p>We are deeply grateful to the businesses, families, and organizations who make our nationwide mission possible.</p>
         </div>
-
         <div class="sponsors-grid">
-          <div class="sponsor-tile"><img src="https://ncmissingpersons.org/wp-content/uploads/2025/03/evergreen-logo-300x130.jpg" alt="Evergreen Land Services" loading="lazy" /></div>
-          <div class="sponsor-tile"><img src="https://ncmissingpersons.org/wp-content/uploads/2019/05/bestrental.png" alt="Best Rentals" loading="lazy" /></div>
-          <div class="sponsor-tile"><img src="https://ncmissingpersons.org/wp-content/uploads/2025/02/Mathew-Stirling-300x210.png" alt="In Memory of Mathew Stirling" loading="lazy" /></div>
-          <div class="sponsor-tile"><img src="https://ncmissingpersons.org/wp-content/uploads/2019/05/trailofblood.png" alt="Trail of Blood by Wanda Evans" loading="lazy" /></div>
-          <div class="sponsor-tile"><img src="https://ncmissingpersons.org/wp-content/uploads/2019/05/lawnmaintenanceslogo.png" alt="HLM Hambone's Lawn Maintenance" loading="lazy" /></div>
-          <div class="sponsor-tile"><img src="https://ncmissingpersons.org/wp-content/uploads/2024/07/hero-logo.png" alt="Community Hero" loading="lazy" /></div>
-
-          <div class="sponsor-tile"><img src="https://ncmissingpersons.org/wp-content/uploads/2025/02/IP_Signature-Vert_FullColor_Digital-300x208.jpg" alt="International Paper" loading="lazy" /></div>
-          <div class="sponsor-tile"><img src="https://ncmissingpersons.org/wp-content/uploads/2020/02/texas-roadhouse-logo-300x158-1.jpg" alt="Texas Roadhouse" loading="lazy" /></div>
-          <div class="sponsor-tile"><img src="https://ncmissingpersons.org/wp-content/uploads/2019/05/kennethstoneman.png" alt="Kenneth and Michele Stoneman" loading="lazy" /></div>
-          <div class="sponsor-tile"><img src="https://ncmissingpersons.org/wp-content/uploads/2020/02/CEPCO-REVISED-BLUE-Logo-03-2016-300x76.jpg" alt="CEPCO" loading="lazy" /></div>
-          <div class="sponsor-tile"><img src="https://ncmissingpersons.org/wp-content/uploads/2019/05/sponsorlogo2.png" alt="In Honor of Missing Persons - Jeremy Baptist and Family" loading="lazy" /></div>
-          <div class="sponsor-tile"><img src="https://ncmissingpersons.org/wp-content/uploads/2024/07/BEMC_2020_Logo_Stacked-1-300x190.png" alt="Brunswick Electric Membership Corporation (BEMC)" loading="lazy" /></div>
-
-          <div class="sponsor-tile"><img src="https://ncmissingpersons.org/wp-content/uploads/2025/03/Lela_Tapestry_Logo2-003-1-1-300x100.png" alt="Hotel Lela Tapestry Collection by Hilton" loading="lazy" /></div>
-          <div class="sponsor-tile"><img src="https://ncmissingpersons.org/wp-content/uploads/2025/03/Palomas-logo-1-1.png" alt="Paloma's at Lela" loading="lazy" /></div>
-          <div class="sponsor-tile"><img src="https://ncmissingpersons.org/wp-content/uploads/2025/03/1503427-LL-25th-Anniversary-Logo-color-new-192w.webp" alt="L&amp;L Tent and Party Rentals 25th Anniversary" loading="lazy" /></div>
-          <div class="sponsor-tile"><img src="https://ncmissingpersons.org/wp-content/uploads/2025/03/2024-top-rated-badge-1-300x300.png" alt="GreatNonprofits 2024 Top-Rated Nonprofit" loading="lazy" /></div>
+          <div class="sponsor-tile reveal-stagger"><img src="https://ncmissingpersons.org/wp-content/uploads/2025/03/evergreen-logo-300x130.jpg" alt="Evergreen Land Services" loading="lazy" /></div>
+          <div class="sponsor-tile reveal-stagger"><img src="https://ncmissingpersons.org/wp-content/uploads/2019/05/bestrental.png" alt="Best Rentals" loading="lazy" /></div>
+          <div class="sponsor-tile reveal-stagger"><img src="https://ncmissingpersons.org/wp-content/uploads/2025/02/Mathew-Stirling-300x210.png" alt="In Memory of Mathew Stirling" loading="lazy" /></div>
+          <div class="sponsor-tile reveal-stagger"><img src="https://ncmissingpersons.org/wp-content/uploads/2019/05/trailofblood.png" alt="Trail of Blood by Wanda Evans" loading="lazy" /></div>
+          <div class="sponsor-tile reveal-stagger"><img src="https://ncmissingpersons.org/wp-content/uploads/2019/05/lawnmaintenanceslogo.png" alt="HLM Hambone's Lawn Maintenance" loading="lazy" /></div>
+          <div class="sponsor-tile reveal-stagger"><img src="https://ncmissingpersons.org/wp-content/uploads/2024/07/hero-logo.png" alt="Community Hero" loading="lazy" /></div>
+          <div class="sponsor-tile reveal-stagger"><img src="https://ncmissingpersons.org/wp-content/uploads/2025/02/IP_Signature-Vert_FullColor_Digital-300x208.jpg" alt="International Paper" loading="lazy" /></div>
+          <div class="sponsor-tile reveal-stagger"><img src="https://ncmissingpersons.org/wp-content/uploads/2020/02/texas-roadhouse-logo-300x158-1.jpg" alt="Texas Roadhouse" loading="lazy" /></div>
+          <div class="sponsor-tile reveal-stagger"><img src="https://ncmissingpersons.org/wp-content/uploads/2019/05/kennethstoneman.png" alt="Kenneth and Michele Stoneman" loading="lazy" /></div>
+          <div class="sponsor-tile reveal-stagger"><img src="https://ncmissingpersons.org/wp-content/uploads/2020/02/CEPCO-REVISED-BLUE-Logo-03-2016-300x76.jpg" alt="CEPCO" loading="lazy" /></div>
+          <div class="sponsor-tile reveal-stagger"><img src="https://ncmissingpersons.org/wp-content/uploads/2019/05/sponsorlogo2.png" alt="In Honor of Missing Persons - Jeremy Baptist and Family" loading="lazy" /></div>
+          <div class="sponsor-tile reveal-stagger"><img src="https://ncmissingpersons.org/wp-content/uploads/2024/07/BEMC_2020_Logo_Stacked-1-300x190.png" alt="Brunswick Electric Membership Corporation (BEMC)" loading="lazy" /></div>
+          <div class="sponsor-tile reveal-stagger"><img src="https://ncmissingpersons.org/wp-content/uploads/2025/03/Lela_Tapestry_Logo2-003-1-1-300x100.png" alt="Hotel Lela Tapestry Collection by Hilton" loading="lazy" /></div>
+          <div class="sponsor-tile reveal-stagger"><img src="https://ncmissingpersons.org/wp-content/uploads/2025/03/Palomas-logo-1-1.png" alt="Paloma's at Lela" loading="lazy" /></div>
+          <div class="sponsor-tile reveal-stagger"><img src="https://ncmissingpersons.org/wp-content/uploads/2025/03/1503427-LL-25th-Anniversary-Logo-color-new-192w.webp" alt="L&amp;L Tent and Party Rentals 25th Anniversary" loading="lazy" /></div>
+          <div class="sponsor-tile reveal-stagger"><img src="https://ncmissingpersons.org/wp-content/uploads/2025/03/2024-top-rated-badge-1-300x300.png" alt="GreatNonprofits 2024 Top-Rated Nonprofit" loading="lazy" /></div>
         </div>
       </div>
     </section>
@@ -434,55 +495,43 @@
       <div class="container share-strip-inner">
         <span class="share-label">Share CUE's Mission:</span>
         <div class="share-buttons">
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://ncmissingpersons.org/" target="_blank" rel="noopener" class="share-btn">Facebook</a>
-          <a href="https://twitter.com/intent/tweet?url=https://ncmissingpersons.org/&text=CUE%20Center%20for%20Missing%20Persons" target="_blank" rel="noopener" class="share-btn">X / Twitter</a>
-          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://ncmissingpersons.org/" target="_blank" rel="noopener" class="share-btn">LinkedIn</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://ncmissingpersons.org/" target="_blank" rel="noopener" class="share-btn share-fb">Facebook</a>
+          <a href="https://twitter.com/intent/tweet?url=https://ncmissingpersons.org/&text=CUE%20Center%20for%20Missing%20Persons" target="_blank" rel="noopener" class="share-btn share-x">X / Twitter</a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://ncmissingpersons.org/" target="_blank" rel="noopener" class="share-btn share-li">LinkedIn</a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- 4-Column Black Footer (Preserved Original Content & Structure) -->
+  <!-- Footer -->
   <footer class="site-footer">
+    <div class="footer-top-accent" aria-hidden="true"></div>
     <div class="container footer-grid">
       <div class="footer-col">
-        <h4>ABOUT US</h4>
-        <p>
-          Community United Effort also known as (CUE) Center for Missing Persons, a 501c3 tax exempt non-profit organization, founded in Wilmington, North Carolina, serving missing persons nationwide.
-        </p>
+        <div class="footer-logo-wrap">
+          <img src="https://ncmissingpersons.org/wp-content/uploads/2019/05/output-onlinepngtools-1-1-1-1-300x267.png"
+            alt="CUE Center White Emblem" class="footer-emblem" width="68" height="60" />
+          <h4>ABOUT US</h4>
+        </div>
+        <p>Community United Effort also known as (CUE) Center for Missing Persons, a 501c3 tax exempt non-profit organization, founded in Wilmington, North Carolina, serving missing persons nationwide.</p>
       </div>
-
       <div class="footer-col">
         <h4>KEEP IN TOUCH</h4>
         <ul class="footer-contact-list">
-          <li><strong>Phone:</strong> <a href="tel:9102321687">910-232-1687</a></li>
-          <li><strong>Fax:</strong> 910-399-6137</li>
-          <li><strong>Email:</strong> <a href="mailto:cuecenter@aol.com">cuecenter@aol.com</a></li>
+          <li><span class="footer-label">Phone</span><a href="tel:9102321687">910-232-1687</a></li>
+          <li><span class="footer-label">Fax</span><span>910-399-6137</span></li>
+          <li><span class="footer-label">Email</span><a href="mailto:cuecenter@aol.com">cuecenter@aol.com</a></li>
         </ul>
       </div>
-
       <div class="footer-col">
         <h4>LOCATION</h4>
-        <p>
-          Community United Effort (CUE)<br />
-          Mailing: PO Box 12714<br />
-          Wilmington, North Carolina 28405
-        </p>
+        <p>Community United Effort (CUE)<br />Mailing: PO Box 12714<br />Wilmington, North Carolina 28405</p>
       </div>
-
-      <div class="footer-col footer-hours-col">
+      <div class="footer-col">
         <h4>ORGANIZATION HOURS</h4>
-        <p class="hours-badge">24 HOUR LINE: <a href="tel:9102321687">910-232-1687</a></p>
-        <img
-          src="https://ncmissingpersons.org/wp-content/uploads/2019/05/output-onlinepngtools-1-1-1-1-300x267.png"
-          alt="CUE Center for Missing Persons White Emblem"
-          class="footer-emblem"
-          width="115"
-          height="102"
-        />
+        <p class="hours-badge">24 HOUR LINE:<br><a href="tel:9102321687">910-232-1687</a></p>
       </div>
     </div>
-
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
         <span>&copy; 2026 &middot; Community United Effort (CUE) | All Rights Reserved</span>
@@ -491,7 +540,7 @@
     </div>
   </footer>
 
-  <!-- Floating 24/7 Contact & Tip Widget (Modernized) -->
+  <!-- Floating Contact Widget -->
   <button type="button" class="floating-contact-btn" id="contact-fab" aria-label="Contact CUE Center">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
     <span>Contact Us</span>
@@ -508,15 +557,12 @@
     <form class="contact-modal-form" id="contact-modal-form">
       <label for="contact-name">Your Name</label>
       <input id="contact-name" type="text" required placeholder="Full name" />
-
       <label for="contact-email">Email Address</label>
       <input id="contact-email" type="email" required placeholder="you@example.com" />
-
       <label for="contact-message">Message or Inquiry</label>
       <textarea id="contact-message" rows="3" required placeholder="How can CUE help you?"></textarea>
-
       <button type="submit" class="btn btn-gold btn-full">Send Message to cuecenter@aol.com</button>
-      <p class="contact-form-note">For urgent missing person tips, please call <strong>910-232-1687</strong> or use our <a href="https://ncmissingpersons.org/confidential-tip-form/">Confidential Tip Form</a>.</p>
+      <p class="contact-form-note">For urgent tips, call <strong>910-232-1687</strong> or use our <a href="https://ncmissingpersons.org/confidential-tip-form/">Confidential Tip Form</a>.</p>
     </form>
   </div>
 
